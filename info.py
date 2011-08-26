@@ -7,7 +7,6 @@ info
 
 
 """
-import numpy as np
 from dim import DimBase
 
 class Info(tuple):
