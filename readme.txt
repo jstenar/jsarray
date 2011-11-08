@@ -7,9 +7,10 @@ For example one axis could represent a time or frequency dimension or perhaps
 repeated measurements, two of the dimensions could be matrix dimensions.
 
 To encode this information a new tuple has been added along the regular shape tuple. 
-In this implementation we call this *info*. Each element in the info tuple is an instance
-of a Dim class, the Dim object contains the name, data, unit and outputformat (format string
-to store format string for default formatting of the data).
+In this implementation we call the attribute storing this tuple *info*. Each element 
+in the info tuple is an instance of a Dim class, the Dim object contains the name,
+data, unit and outputformat (format string to store format string for default
+formatting of the data).
 
 The Dim object is supposed to be frozen so it can be used as a dictionary key.
 
@@ -103,5 +104,3 @@ for different objects::
 	s_result = rawresult.std(DimRep)
 	
 Here we get the mean over all repeat dimensions but leave other dimensions alone	
-
-
